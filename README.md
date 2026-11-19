@@ -20,7 +20,9 @@ This project takes a real-world Indian real estate dataset (Thane region), clean
 ```
 House Price Prediction using Linear Regg and GBR/
 │
-├── house_prices.csv              # Raw dataset
+├── data/
+│   └── raw/
+│       └── house_prices.zip      # Compressed raw dataset (CSV inside)
 ├── house_price_prediction.py     # Main ML script
 ├── requirements.txt              # Pinned Python dependencies
 ├── predictions_scatter.png       # Actual vs Predicted plot (both models)
@@ -109,6 +111,7 @@ House Price Prediction using Linear Regg and GBR/
    ```bash
    python house_price_prediction.py
    ```
+   > The script reads the dataset directly from `data/raw/house_prices.zip` — no manual extraction needed.
 
 4. Output metrics will be printed to the terminal and plots saved as PNG files.
 
